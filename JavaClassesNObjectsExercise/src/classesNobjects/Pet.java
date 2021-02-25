@@ -75,11 +75,11 @@ public class Pet {
 		System.out.println("How old is your pet?");
 		String age = getInfo.nextLine();
 		System.out.println("How old is your 2nd pet?");
-		String age2 = getInfo.nextLine();
+	    String age2 = getInfo.nextLine();
 		if(age == null || age == "") {
        	 throw new Exception("Please put in your pet's age");
         } 
-		else if(age2 == null || age2 == "") {
+		else if(age2 == "" || age2 == null) {
         	 age2 = "0";
          }
 		 Age = Integer.parseInt(age);
@@ -126,17 +126,17 @@ public class Pet {
         String type = "";
         
         //uses first constructor and set methods to reset the info for another pet
-        Pet chika = new Pet(name,age,location,type);
+        Pet chika = new Pet(fido.Name2,fido.Age2,fido.Location2,fido.Type2);
         		
-        name = chika.getName();
-        age = chika.getAge();
-        location = chika.Location;
+        name = chika.Name2;
+        age = chika.Age2;
+        location = chika.Location2;
       
         System.out.println();
         System.out.println("Pet Info 2");
         System.out.println("Pet #2's Name: " + name);
         System.out.println("Pet #2's Age: " + age);
-        System.out.println("Pet #2's Species: " + chika.Type);
+        System.out.println("Pet #2's Species: " + chika.Type2);
         System.out.println("Pet #2's Address: " + location);
         
 	}
