@@ -4,6 +4,25 @@ import java.util.Scanner;
 
 public class Pet {
    //start back on Custom java instuctions on this exercise
+	
+	/*Create a Pet Class with the following instance variables: 
+	 * name (PRIVATE)
+	 * age (PRIVATE)
+	 * location (PRIVATE)
+	 * type (PRIVATE) 
+	 * two constructors
+	 * empty
+	 * all attributes
+	 * 
+	 * Code to be able to access the following (Get Methods):
+	 * name
+	 * age
+	 * type
+	 * 
+	 * Code to be able to change (Set Methods):
+	 * name
+	 * age
+	 * location*/
 	Scanner getInfo = new Scanner(System.in); 
 	
 	private String Name;
